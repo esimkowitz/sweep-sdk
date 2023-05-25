@@ -13,7 +13,6 @@ option(DUMMY "Build dummy libsweep always returning static point cloud data. No 
 
 
 # Platform specific compiler and linker options.
-set(ALLOW_DUPLICATE_CUSTOM_TARGETS TRUE)
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Wextra -pedantic -fvisibility=hidden -fPIC -fno-rtti")
